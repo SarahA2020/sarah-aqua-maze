@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aqua Maze</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ranchers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+    <!--Splash Screen-->
+        <section id="splash-screen">
+            <img src="images/friendly-fish.png" class="fish-logo">
+            <div class="splash-container">
+                <h1>Aqua Maze</h1>
+                <div class="instructions">
+                    <p>You have been trapped in an underwater world! Navigate your way through the maze and make it to the escape submarine before your time runs out.</p>
+                    <p>Be sure not to stray from the maze path or run into the hungry deep-sea creatures - they will be only too happy to gobble you up!</p>
+                    <p>Place your cursor on the starfish to get ready to play. Once your cursor leaves the starfish and enters the maze the timer will begin counting down.</p>
+                    <p>Good luck!</p>
+                </div>
+                <button class="splash-screen-start-button">Start</button>
+            </div>
+        </section>
+
+    <!--Maze Screen-->
+        <section id="maze-screen">
+            <h1 class="maze-screen-heading">Aqua Maze</h1>
+            <div class="game-box">
+                <div class="start-zone">
+                    <p>start</p>
+                    <img src="images/starfish.png">
+                </div>
+                <img src="images/octopus.png" class="collision octopus">
+                <img src="images/scary-fish.png" class="collision scary-fish">
+                <img src="images/crab.png" class="collision crab">
+                <img src="images/turtle.png" class="turtle">
+                <img src="images/anchor.png" class="anchor">
+                <img src="images/coral.png" class="coral">
+                <img src="images/shell.png" class="shell">
+                <img src="images/shark.png" class="shark">
+                <img src="images/rock.png" class="rock">
+                <div class="timer"></div>
+                <div class="maze-container collision"></div>
+                <div class="maze-path section-one vertical"></div>
+                <div class="maze-path section-two horizontal"></div>
+                <div class="maze-path section-three vertical"></div>
+                <div class="maze-path section-four horizontal"></div>
+                <div class="maze-path section-five vertical"></div>
+                <div class="maze-path section-six horizontal"></div>
+                <div class="maze-path section-seven vertical"></div>
+                <div class="maze-path section-eight horizontal"></div>
+                <div class="maze-path section-nine vertical"></div>
+                <div class="maze-path section-ten horizontal"></div>
+                <div class="maze-path section-eleven vertical"></div>
+                <div class="maze-path section-twelve horizontal"></div>
+                <div class="maze-path section-thirteen vertical"></div>
+                <div class="maze-path section-fourteen horizontal"></div>
+                <div class="maze-path section-fifteen vertical"></div>
+                <div class="maze-path section-sixteen horizontal"></div>
+                <div class="maze-path section-seventeen vertical"></div>
+                <div class="maze-path section-eighteen horizontal"></div>
+                <div class="maze-path section-nineteen vertical"></div>
+                <div class="maze-path section-dead-end vertical"></div>
+                <div class="end-zone">
+                    <p>Finish</p>
+                    <img src="images/submarine.png">
+                </div>
+            </div>
+        </section>
+
+    <!-- Pop Ups -->
+
+        <div class="pop-up lose">
+            <h1 class="pop-up-heading">You Lose!</h1>
+            <p class="pop-up-text">You have been thwarted by the watery depths</p>
+            <button class="restart-button">Try Again</button>
+        </div>
+    </body>
+</html>

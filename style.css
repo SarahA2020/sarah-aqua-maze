@@ -1,0 +1,419 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    background-image: url("images/bubble-background-4.jpg");
+    background-size: cover;
+}
+
+/* Splash Screen Styling */
+
+#splash-screen {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fish-logo {
+    width: 12%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    animation: makeFishMove 1s linear 0s infinite alternate;
+}
+
+/* Fish Logo Animation */
+
+@keyframes makeFishMove {
+    from {transform: rotate(5deg);}
+    to{transform: rotate(-5deg);}
+}
+
+.splash-container {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 61%;
+}
+
+h1 {
+    font-family: 'Ranchers', cursive;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    color: #e4e726;
+    margin-bottom: 0px;
+}
+
+.instructions {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.splash-screen-start-button {
+    font-family: 'Ranchers', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: 9px;
+    text-transform: uppercase;
+    background-color: #e4e726;
+    padding: 8px 18px;
+}
+
+/* Maze Screen Styling */
+
+#maze-screen {
+    display: none;
+}
+
+.maze-screen-heading {
+    font-family: 'Ranchers', cursive;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    color: #e4e726;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.game-box {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 868px;
+}
+
+.start-zone {
+    position: absolute;
+    top: 20px;
+    left: 42px;
+    z-index: 10;
+    width: 120px;
+    height: 120px;
+}
+
+.start-zone p {
+    font-family: 'Ranchers', cursive;
+    font-size: 1.4rem;
+    color: #000000;
+    letter-spacing: 0.06rem;
+    position: absolute;
+    top: 26px;
+    left: 30px;
+    z-index: 20;
+}
+
+.start-zone img {
+    width: 100%;
+}
+
+/* Moving Images */
+
+.octopus {
+    width: 7%;
+    position: absolute;
+    top: 294px;
+    left: 114px;
+    z-index: 10;
+}
+
+.scary-fish {
+    width: 7%;
+    position: absolute;
+    top: 363px;
+    left: 222px;
+    z-index: 10;
+}
+
+.crab {
+    width: 9%;
+    position: absolute;
+    top: 207px;
+    right: 62px;
+    z-index: 10;
+}
+
+/* Static Images */
+
+.turtle {
+    width: 11%;
+    position: absolute;
+    bottom: 64px;
+    left: 61px;
+    z-index: 10;
+}
+
+.anchor {
+    width: 11%;
+    position: absolute;
+    bottom: 64px;
+    left: 61px;
+    z-index: 10;
+}
+
+.coral {
+    width: 11%;
+    position: absolute;
+    top: 150px;
+    left: 384px;
+    z-index: 10;
+}
+
+.shell {
+    width: 11%;
+    position: absolute;
+    bottom: 65px;
+    left: 467px;
+    z-index: 10;
+}
+
+.shark {
+    width: 12%;
+    position: absolute;
+    bottom: 151px;
+    right: 298px;
+    z-index: 10;
+}
+
+.rock {
+    width: 12%;
+    position: absolute;
+    bottom: 225px;
+    right: 46px;
+    z-index: 20;
+}
+
+.timer {
+    position: absolute;
+    width: 89px;
+    height: 43px;
+    background-color: #e4e726;
+    top: 29px;
+    right: 51px;
+    border-radius: 8px;
+}
+
+.maze-container {
+    height: 500px;
+}
+
+.maze-path {
+    position: absolute;
+    background-color: #62f9df;
+}
+
+.vertical {
+    transform: rotate(90deg);
+}
+
+/* Individual maze path sections */
+
+.section-one {
+    width: 148px;
+    height: 21px;
+    top: 178px;
+    left: 13px;
+}
+
+.section-two {
+    width: 146px;
+    height: 21px;
+    top: 262px;
+    left: 76px;
+}
+
+.section-three {
+    width: 192px;
+    height: 15px;
+    top: 179px;
+    left: 119px;
+}
+
+.section-four {
+    width: 219px;
+    height: 15px;
+    top: 91px;
+    left: 208px;
+}
+
+.section-five {
+    width: 61px;
+    height: 15px;
+    top: 129px;
+    left: 234px;
+}
+
+.section-six {
+    width: 61px;
+    height: 15px;
+    top: 153px;
+    left: 258px;
+}
+
+.section-seven {
+    width: 238px;
+    height: 15px;
+    top: 276px;
+    left: 193px;
+}
+
+.section-eight {
+    width: 198px;
+    height: 10px;
+    bottom: 97px;
+    left: 304px;
+}
+
+.section-nine {
+    width: 126px;
+    height: 10px;
+    bottom: 157px;
+    left: 319px;
+}
+
+.section-ten {
+    width: 164px;
+    height: 10px;
+    top: 274px;
+    left: 378px;
+}
+
+.section-eleven {
+    width: 124px;
+    height: 15px;
+    top: 205px;
+    left: 440px;
+}
+
+.section-twelve {
+    width: 40px;
+    height: 15px;
+    top: 136px;
+    left: 494px;
+}
+
+.section-thirteen {
+    width: 48px;
+    height: 15px;
+    top: 119px;
+    left: 503px;
+}
+
+.section-fourteen {
+    width: 48px;
+    height: 15px;
+    top: 102px;
+    left: 520px;
+}
+
+.section-fifteen {
+    width: 48px;
+    height: 15px;
+    top: 85px;
+    left: 536px;
+}
+
+.section-sixteen {
+    width: 90px;
+    height: 10px;
+    top: 59px;
+    right: 225px;
+}
+
+.section-seventeen {
+    width: 127px;
+    height: 10px;
+    top: 118px;
+    right: 165px;
+}
+
+.section-eighteen {
+    width: 82px;
+    height: 13px;
+    top: 175px;
+    right: 152px;
+}
+
+.section-nineteen {
+    width: 208px;
+    height: 10px;
+    top: 281px;
+    right: 53px;
+}
+
+.section-dead-end {
+    width: 62px;
+    height: 11px;
+    top: 124px;
+    left: 390px;
+}
+
+/* Finish Zone */
+
+.end-zone {
+    position: absolute;
+    bottom: 54px;
+    right: 40px;
+    width: 200px;
+    height: 120px;
+}
+
+.end-zone p {
+    font-family: 'Ranchers', cursive;
+    font-size: 1.4rem;
+    color: #000000;
+    letter-spacing: 0.06rem;
+    position: absolute;
+    bottom: 13px;
+    right: 64px;
+    z-index: 20;
+}
+
+.end-zone img {
+    width: 100%;
+}
+
+/* Modals */
+
+.pop-up {
+    border: solid 1px #8b008b;
+    border-radius: 21px;
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #8b008b;
+    display: none;
+}
+
+.pop-up-heading {
+    font-family: 'Ranchers', cursive;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: #e4e726;
+    margin-bottom: 0px;
+}
+
+.pop-up-text {
+    color: #ffffff;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2rem;
+    padding: 22px;
+    margin: 0;
+}
+
+.restart-button {
+    font-family: 'Ranchers', cursive;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    border: none;
+    border-radius: 9px;
+    text-transform: uppercase;
+    background-color: #e4e726;
+    padding: 8px 12px;
+    margin-bottom: 26px;
+}
