@@ -140,6 +140,14 @@ h1 {
 
 /* Static Images */
 
+.turtle {
+    width: 11%;
+    position: absolute;
+    bottom: 64px;
+    left: 61px;
+    z-index: 10;
+}
+
 .anchor {
     width: 11%;
     position: absolute;
